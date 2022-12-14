@@ -2,7 +2,7 @@ package com.test;
 
 public class Car {
 	
-	private String door;
+	private String doors;
 	private String engine;
 	private String wheels;
 	private int speed;
@@ -17,19 +17,19 @@ public class Car {
 //	
 	
 
-	public Car(String door, String engine, String wheels, int speed) {
+	public Car(String doors, String engine, String wheels, int speed) {
 	super();
-	this.door = door;
+	this.doors = doors;
 	this.engine = engine;
 	this.wheels = wheels;
 	this.speed = speed;
 }
 	
 	public String getDoor() {
-		return door;
+		return doors;
 	}
-	public void setDoor(String door) {
-		this.door = door;
+	public void setDoor(String doors) {
+		this.doors = doors;
 	}
 	public String getEngine() {
 		return engine;
@@ -52,7 +52,7 @@ public class Car {
 	
 	public String run() {
 		
-		if(door.equals("closed") && engine.equals("on")
+		if(doors.equals("closed") && engine.equals("on")
 				&& wheels.equals("good")&& speed>0) {
 			return "running";
 		}
